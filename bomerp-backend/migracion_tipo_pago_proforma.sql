@@ -1,6 +1,6 @@
 -- Ruta: bomerp-backend/migracion_tipo_pago_proforma.sql
 -- CAMBIO SOLICITADO: persistir la forma de pago preferida en cada proforma.
--- Ejecutar una sola vez en instalaciones existentes con ddl-auto=validate.
+-- Ejecutar una sola vez después de crear el esquema base, tanto en instalaciones existentes como nuevas.
 -- Las proformas ya registradas conservan el comportamiento contado como valor inicial.
 
 ALTER TABLE PROFORMAS
